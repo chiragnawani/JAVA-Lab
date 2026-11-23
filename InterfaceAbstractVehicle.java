@@ -35,5 +35,7 @@ public class InterfaceAbstractVehicle{
             new Bike("Royal Enfield Classic 350", 5);
             new Car("Fortuner", 8);
         }
+        int highest = v[0].calculateRent();
+        
     }
 }
