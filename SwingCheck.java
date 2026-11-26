@@ -1,14 +1,13 @@
 import javax.swing.*;
 public class SwingCheck {
 public static void main(String[] args) {
-String s = JOptionPane.showInputDialog("Enter a number:");
-int n = Integer.parseInt(s.trim());
-JFrame frame = new JFrame("Result");
-frame.setSize(300, 120);
-frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-frame.setLocationRelativeTo(null);
-JLabel label = new JLabel("Square of " + n + " = " + (n * n));
-frame.add(label);
-frame.setVisible(true); // always the last line
-}
+        String s1 = JOptionPane.showInputDialog("Enter n1: ");
+        String s2 = JOptionPane.showInputDialog("Enter n2: ");
+        
+        int a = Integer.parseInt(s1);
+        int b = Integer.parseInt(s2);
+        JFrame j = new JFrame("Sum Program");
+        JOptionPane.showMessageDialog(j,"Sum = "+ (a+b));
+        j.setVisible(true);
+    }
 }
